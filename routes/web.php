@@ -65,9 +65,40 @@ use Illuminate\Support\Facades\Route;
 //     return view('layout.galeri');
 // });
 
-Route::get('/index', function(){
+
+Route::get('/', function () {
     return view('index');
 });
+
+Route::get('/laporan', function () {
+    return view('laporan');
+});
+
+Route::get('/notifmasuk', function () {
+    return view('notifikasi.notifmasuk');
+});
+
+Route::get('/alat', function () {
+    return view('laporan.alat');
+});
+
+Route::get('/member', function () {
+    return view('laporan.member');
+});
+
+Route::get('/keuangan', function () {
+    return view('laporan.keuangan');
+});
+
+Route::get('/login', function () {
+    return view('login');
+});
+
+
+
+
+
+
 
 
 
